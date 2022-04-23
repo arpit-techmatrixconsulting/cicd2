@@ -4,6 +4,8 @@ public with sharing class CICDNew {
         try {
             System.debug('Hello GITHUB!!');
             System.debug('Hello GITHUB!!!');
+            System.debug('Hello GITHUB!!!');
+
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
         }
