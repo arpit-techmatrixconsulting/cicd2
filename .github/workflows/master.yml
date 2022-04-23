@@ -36,7 +36,7 @@ jobs:
     - name: Authorize SF Org
       env:
         CLIENT_ID: ${{ secrets.SALESFORCEPRODCLIENTID }}
-      run: sfdx force:auth:jwt:grant --clientid $CLIENT_ID --jwtkeyfile ./buildfiles/server.key --username arpit.v@techmatrixconsulting.com2022/04/14_14-37-0.demo.qa --instanceurl https://test.salesforce.com -a sbqa
+      run: sfdx force:auth:jwt:grant --clientid $CLIENT_ID --jwtkeyfile server.key --username arpit.v@techmatrixconsulting.com2022/04/14_14-37-0.demo.qa --instanceurl https://test.salesforce.com -a sbqa
 
     # Convert to Deploy Source
     - name: Convert to Deploy Source
